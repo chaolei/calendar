@@ -1,0 +1,47 @@
+.year-scroll{
+    position: relative;
+    height: calc(100% - 46px);
+
+    .year-change{
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        z-index: 1;
+    }
+    .scroll-panel{
+        height: 100%;
+    }
+}
+.year-container{
+    height: 100%;
+    font-size: 12px;
+
+    .year-title{
+        font-size: 28px;
+    }
+    .month-list{
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 64px);
+        justify-content: space-around;
+    }
+    .month-row{
+        display: flex;
+        width: 100%;
+        min-height: 30%;
+        justify-content: space-around;
+
+        .month-container{
+            min-width: 20%;
+        }
+    }
+    .year-title{
+        position: relative;
+        margin-left: 16px;
+        line-height: 40px;
+        height: 40px;
+        padding-bottom: 16px;
+        padding-top: 8px;
+    }
+    
+}

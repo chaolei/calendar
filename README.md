@@ -5,14 +5,14 @@
 
 ```bash
 # run application in development mode
-yarn dev
+npm run dev
 
 # compile source code and create webpack output
-yarn compile
+npm run compile
 
 # `yarn compile` & create build ia32 with electron-builder
-yarn build
+npm run build
 
 # `yarn compile` & create unpacked build with electron-builder
-yarn build:dir
+npm run build:dir
 ```

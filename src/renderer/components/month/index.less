@@ -1,0 +1,68 @@
+.month-scroll{
+    position: relative;
+    height: calc(100% - 46px);
+
+    .month-change{
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        z-index: 1;
+    }
+    .scroll-panel{
+        height: 100%;
+    }
+
+    .month-container{
+        height: calc(100% - 88px);
+        margin: 0;
+
+        .day-item-con{
+            align-items: start;
+            border-top: 1px solid #cdcdcd;
+            border-left: 1px solid #cdcdcd;
+            box-sizing: border-box;
+            padding: 5px 10px 5px 5px;
+        }
+        >div:nth-child(1),>div:nth-child(8),>div:nth-child(15),>div:nth-child(22),>div:nth-child(29),>div:nth-child(36){
+            border-left: none;
+        }
+        .week-title{
+            border: none;
+        }
+        .day-item{
+            width: 100%;
+            height: auto;
+            line-height: 20px;
+            text-align: right;
+        }
+    }
+    .week-title{
+        height: 30px;
+    }
+    .week-list{
+        height: 40px;
+        line-height: 40px;
+        display: flex;
+        width: 100%;
+
+        .day-item-con{
+            width: 14.285%;
+            box-sizing: border-box;
+            text-align: right;
+            padding: 5px 10px 5px 5px;
+        }
+    }
+    .scroll-container{
+        height: 100%;
+    }
+    .year-title{
+        padding-top: 8px;
+        line-height: 40px;
+        font-size: 28px;
+        height: 40px;
+        padding-left: 16px;
+    }
+    .week{
+        background: #efefef;
+    }
+}

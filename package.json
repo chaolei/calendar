@@ -1,21 +1,21 @@
 {
-  "name": "electron-builder-start",
+  "name": "calendar",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "electron-webpack dev",
+    "start": "electron-webpack dev",
     "compile": "electron-webpack",
-    "build": "yarn compile && electron-builder",
+    "build": "electron-builder",
     "build:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {
     "source-map-support": "^0.5.9"
   },
   "build": {
-    "productName": "electron-builder-start",
-    "appId": "org.simulatedgreg.electron-builder-start",
+    "productName": "仿mac日历",
+    "appId": "org.leichao.calendar",
     "directories": {
-      "output": "dist"
+      "output": "build"
     },
     "files": [
       "dist/electron/**/*",
@@ -31,7 +31,7 @@
       "installerHeaderIcon": "build/icons/icon.ico",
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "electron-builder-start",
+      "shortcutName": "calendar",
       "include": "build/script/installer.nsh"
     },
     "dmg": {
@@ -68,9 +68,16 @@
     }
   },
   "devDependencies": {
-    "electron": "2.0.7",
+    "mobx": "^5.9.4",
+    "mobx-react": "^5.4.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "@babel/preset-react": "^7.0.0",
+    "electron": "4.2.2",
     "electron-builder": "^20.28.1",
     "electron-webpack": "^2.1.2",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
     "webpack": "^4.16.5"
   },
   "resolutions": {
