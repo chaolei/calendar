@@ -1,5 +1,6 @@
-# electron-webpack-quick-start
-> [`electron-webpack`] + [`electron-builer`]的客户端打包demo 
+# 仿mac系统的日历
+> 使用架构 electron + react + mobx
+> 使用工具 electron-webpack electron-builer
 
 ### Scripts
 
