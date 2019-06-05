@@ -1,0 +1,61 @@
+.week-scroll{
+    .scroll-panel{
+        height: calc(100% - 48px);
+    }
+    .week-list{
+        .day-item-con{
+            width: 13%;
+            text-align: center;
+            padding: 0;
+        }
+        .day-item-con.day-time{
+            width: 9%;
+        }
+        .cur-day span{
+            border-radius: 100%;
+            background: #f30000;
+            color: #fff;
+            vertical-align: middle;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+        }
+        .week-title{
+            height: auto;
+        }
+    }
+    .spe {
+        background: #efefef;
+    }
+    .week-container{
+        height: calc(100% - 60px);
+        margin-top: 20px;
+        display: flex;
+        overflow-y: auto;
+
+        .day-item-con{
+            width: 13%;
+            text-align: center;
+            padding: 0;
+        }
+        .day-item-con.day-time{
+            width: 9%;
+        }
+
+        .hour-area{
+            height: 8%;
+            border-top: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            font-size: 12px;
+        }
+        .day-time .hour-area{
+            border-color: transparent;
+            text-align: right;
+            padding-right: 8px;
+        }
+        .spe .hour-area{
+            background: #efefef;
+        }
+    }
+}

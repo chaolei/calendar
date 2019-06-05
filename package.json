@@ -9,13 +9,14 @@
     "build:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {
+    "nedb": "^1.8.0",
     "source-map-support": "^0.5.9"
   },
   "build": {
     "productName": "仿mac日历",
     "appId": "org.leichao.calendar",
     "directories": {
-      "output": "build"
+      "output": "package"
     },
     "files": [
       "dist/electron/**/*",

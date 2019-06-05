@@ -11,9 +11,10 @@ class MonthScroll extends Component{
 
     constructor() {
         super();
-        this.year = MonthMobx.year;
-        this.month = MonthMobx.month;
-        this.nowDay = MonthMobx.today.getDate();
+        let date = new Date();
+        this.year = date.getFullYear();
+        this.month = date.getMonth();
+        this.nowDay = date.getDate();
     }
 
     nextMonth() {
@@ -40,7 +41,6 @@ class MonthScroll extends Component{
     }
 
     render() {
-
         return (
             <div className='month-scroll'>
                 <div className='month-change'>

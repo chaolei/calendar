@@ -1,7 +1,7 @@
 import React , {Component} from 'react';
 import { observer } from "mobx-react";
 
-import CalendarYear from './index';
+import CalendarYear from './year';
 import yearMobx from '../../mobx/store/yearPage';
 import DateSwitcher from '../common/DateSwitcher';
 
